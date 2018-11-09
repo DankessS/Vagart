@@ -1,0 +1,132 @@
+#main {
+  text-align:center;
+  margin-top: 12%;
+}
+
+.full {
+  height: auto;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  padding-top:10px;
+  font-size: 17px;
+}
+
+/*.topnav a:hover {*/
+/*background-color: #ddd;*/
+/*}*/
+
+.topnav #yt {
+  background-image: url('/YOUTUBE.png');
+  background-size: 26px;
+  background-repeat: no-repeat;
+  width:30px;
+  height:22px;
+}
+
+.topnav #yt:hover {
+  background: url('/assets/img/YOUTUBE 2.png');
+  background-size: 26px;
+  background-repeat: no-repeat;
+  width:30px;
+  height:22px;
+}
+
+.topnav #fb {
+  background-image: url('/assets/img/FACEBOOK.png');
+  background-size: 12px;
+  background-repeat: no-repeat;
+  width:30px;
+  height:30px;
+}
+
+.topnav #fb:hover {
+  background-image: url('/assets/img/FACEBOOK 2.png');
+  background-size: 12px;
+  background-repeat: no-repeat;
+  width:30px;
+  height:30px;
+}
+
+.topnav #in {
+  background-image: url('/assets/img/INSTAGRAM.png');
+  background-size: 24px;
+  background-repeat: no-repeat;
+  width:30px;
+  height:29px;
+}
+
+.topnav #in:hover {
+  background-image: url('/assets/img/INSTAGRAM 2.png');
+  background-size: 24px;
+  background-repeat: no-repeat;
+  width:30px;
+  height:29px;
+}
+
+.topnav #ab {
+  background-image: url('/assets/img/O MNIE.png');
+  background-size: 24px;
+  background-repeat: no-repeat;
+  width:30px;
+  height:29px;
+}
+
+.topnav #ab:hover {
+  background-image: url('/assets/img/O MNIE 2.png');
+  background-size: 24px;
+  background-repeat: no-repeat;
+  width:30px;
+  height:29px;
+}
+
+.topnav #cn {
+  background-image: url('/assets/img/KONTAKT.png');
+  background-size: 24px;
+  background-repeat: no-repeat;
+  width:30px;
+  height:29px;
+}
+
+.topnav #cn:hover {
+  background-image: url('/assets/img/KONTAKT 2.png');
+  background-size: 24px;
+  background-repeat: no-repeat;
+  width:30px;
+  height:29px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
