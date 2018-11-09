@@ -1,0 +1,78 @@
+<div class="container">
+  <h3 style="margin-left: 7px">Formularz kontaktowy</h3>
+  <div class="row">
+    <div class="col-md-7">
+      <form [formGroup]="contactForm" class="form-horizontal" (submit)="sendMessage()" novalidate>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-2">
+            <div class="input-group">
+              <mat-form-field>
+                <input class="formFieldWidth480" matInput>
+                <mat-placeholder class="placeholder">Podaj imię</mat-placeholder>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group">
+              <mat-form-field>
+                <input matInput>
+                <mat-placeholder class="placeholder">Podaj nazwisko</mat-placeholder>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+        <div class=row>
+          <div class="col-md-6 col-md-offset-2">
+            <div class="input-group">
+              <mat-form-field>
+                <input matInput formControlName="email" required>
+                <mat-placeholder class="placeholder">Podaj email</mat-placeholder>
+                <mat-error *ngIf="contactForm.controls.email.invalid">{{errorEmailMessage()}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group">
+              <mat-form-field>
+                <input matInput>
+                <mat-placeholder class="placeholder">Podaj telefon</mat-placeholder>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+        <div class=row>
+          <div class="col-md-10 col-md-offset-2">
+            <div class="input-group">
+              <mat-form-field style="width:100%">
+                <textarea matInput formControlName="message" rows=18 cols="100" required></textarea>
+                <mat-placeholder class="placeholder">Wypełnij wiadomość</mat-placeholder>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+        <div class="form-group ">
+          <button mat-raised-button color="primary" type="submit">
+            Wyślij wiadomość
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-5 col-md-offset-2">
+          <div class="row" id="email">
+          <img src="../../assets/img/EMAIL.png" width="20" height="20"> <span>kontakt@vagart.pl</span>
+          </div>
+          <div class="row" id="address">
+            <img id="address-img" src="../../assets/img/ADRES.png" width="20" height="20"> <span>41-400 Mysłowice</span>
+          </div>
+          <div class="row" id="phone">
+            <img src="../../assets/img/TELEFON.png" width="20" height="20"> <span
+          >tel: +48 516 641 915</span>
+          </div>
+          <div class="row" id="site">
+          <img src="../../assets/img/STRONA.png" width="20" height="20"> <span>www.vagart.pl</span>
+          </div>
+    </div>
+  </div>
+</div>
+
+

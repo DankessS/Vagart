@@ -1,0 +1,229 @@
+@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+
+html {
+  height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#main {
+  text-align: center;
+  margin-top: 12%;
+}
+
+body {
+  background: url('/assets/img/background.png') no-repeat center center fixed;
+  -webkit-overflow-scrolling: touch;
+  background-size: cover;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.rspn {
+  max-width: 100%;
+  height: auto;
+}
+
+#hm.active, #of.active, #vd.active, #at.active, #gf.active, #ab.active, #cn.active {
+  color: grey;
+}
+
+.bar {
+  overflow: hidden;
+  background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%);
+  border-bottom: 1px solid white;
+}
+
+.logo {
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+.sidenav .closebtn {
+  display: none;
+}
+
+.icon-open {
+  display: none;
+}
+
+.sidenav a {
+  float: left;
+  display: block;
+  margin-left:60%;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
+  font-size: 17px;
+}
+
+.sidenav a:hover, a:active {
+  color: grey;
+}
+
+.sidenav #yt {
+  background: url('/assets/img/YOUTUBE.png') no-repeat;
+  background-size: 17px;
+  width: 17px;
+  height: 17px;
+}
+
+.sidenav #yt:hover {
+  background: url('/assets/img/YOUTUBE 2.png') no-repeat;
+  background-size: 17px;
+  width: 17px;
+  height: 17px;
+}
+
+.sidenav #fb {
+  background: url('/assets/img/FACEBOOK.png') no-repeat;
+  background-size: 10px;
+  width: 10px;
+  height: 17px;
+}
+
+.sidenav #fb:hover {
+  background: url('/assets/img/FACEBOOK 2.png') no-repeat;
+  background-size: 10px;
+  width: 10px;
+  height: 17px;
+}
+
+.sidenav #in {
+  background: url('/assets/img/INSTAGRAM.png') no-repeat;
+  background-size: 17px;
+  width: 17px;
+  height: 17px;
+}
+
+.sidanav #in:hover {
+  background: url('/assets/img/INSTAGRAM 2.png') no-repeat;
+  background-size: 17px;
+  width: 17px;
+  height: 17px;
+}
+
+.sidenav #cn:hover #ab:hover #gf:hover #at:hover #vd:hover #of:hover #hm:hover {
+  color: black;
+  background-repeat: no-repeat;
+}
+
+#yt-rspn, #fb-rspn, #in-rspn {
+  display: none!important;
+}
+
+@media screen and (max-width: 1160px) {
+  /*.topnav.responsive a {*/
+  /*float: none;*/
+  /*display: block;*/
+  /*text-align: left;*/
+  /*}*/
+  /*.topnav.responsive i {*/
+  /*float: none;*/
+  /*display: block;*/
+  /*text-align: right;*/
+  /*}*/
+  #v, #a, #g {
+    width: 40px;
+    /*margin-top: 2%;*/
+  }
+
+  #a {
+    margin-left: 5px;
+  }
+
+  #art {
+    width: 35px;
+    margin-top: 27px;
+  }
+
+  #kr, #yt, #in, #fb {
+    display: none;
+  }
+
+  #yt-rspn, #fb-rspn, #in-rspn {
+    display: inline;
+  }
+
+  .sidenav a:not(:first-child) {
+    display: none;
+  }
+
+  .sidenav.responsive #in-rspn {
+    background: url('/assets/img/INSTAGRAM.png') no-repeat;
+    background-size: 17px;
+    width: 17px;
+    height: 17px;
+  }
+
+  .sidenav.responsive {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.5)100%);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav .responsive a:hover, a:active {
+    color: grey;
+  }
+
+  .icon-open {
+    display:flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 42px;
+    cursor: pointer;
+    color: white;
+    float: right;
+    margin-top: 7px;
+    margin-right: 27px;
+  }
+
+  .sidenav.responsive a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav.responsive a:hover {
+    color: grey;
+  }
+
+  .logo {
+    margin-top: 3px;
+    margin-left: 3px;
+  }
+
+  .sidenav.responsive .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white;
+    font-size: 32px
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav.responsive {
+      padding-top: 15px;
+    }
+
+    .sidenav.responsive a {
+      font-size: 18px;
+    }
+  }
+
+}
+

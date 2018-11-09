@@ -1,0 +1,50 @@
+.container {
+  background-color: rgba(192, 192, 192, 0.6);
+  border-radius: 25px;
+  width: 47%;
+  margin-left: 9%;
+  margin-top: 7%;
+  overflow: auto;
+  color: white;
+}
+
+.form-horizontal {
+  color: white;
+  padding-top: 6%;
+  padding-bottom: 3%;
+  padding-left: 7%;
+}
+
+.mat-raised-button {
+  background-color: #181818;
+}
+
+.placeholder {
+  color: black;
+}
+
+img {
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+#address, #email, #phone, #site {
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+#site {
+  margin-bottom: 3%;
+}
+
+.contact {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 80%;
+    position: center;
+  }
+
+}

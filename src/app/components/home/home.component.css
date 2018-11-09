@@ -1,0 +1,17 @@
+.rspn {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .rspn {
+    width: 30%;
+    padding-top: 30%;
+  }
+}
+
+.formFieldWidth480 .mat-form-field-infix {
+  width: 480px;
+}
+
+
