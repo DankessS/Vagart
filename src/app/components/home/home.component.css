@@ -6,8 +6,20 @@
 @media screen and (max-width: 700px) {
   .rspn {
     width: 30%;
-    padding-top: 30%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
   }
+}
+
+#logo-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .formFieldWidth480 .mat-form-field-infix {

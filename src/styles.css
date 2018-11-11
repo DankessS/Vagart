@@ -113,6 +113,10 @@ body {
   display: none!important;
 }
 
+#art {
+  margin-top: 37px;
+}
+
 @media screen and (max-width: 1160px) {
   /*.topnav.responsive a {*/
   /*float: none;*/
