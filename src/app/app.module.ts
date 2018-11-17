@@ -70,7 +70,6 @@ import {ToppersComponent} from "./components/graphics/papetery/toppers/toppers.c
 import {VignettesComponent} from "./components/graphics/papetery/vignettes/vignettes.component";
 import {PosterComponent} from "./components/graphics/papetery/poster/poster.component";
 import {PendantsComponent} from "./components/graphics/papetery/pendants/pendants.component";
-import {AboutComponent} from "./components/about/about.component";
 
 @NgModule({
   exports: [
@@ -140,8 +139,7 @@ export class MaterialModule {}
     RegistrationTablesComponent,
     SitPlanComponent,
     ToppersComponent,
-    VignettesComponent,
-    AboutComponent
+    VignettesComponent
   ],
   imports: [
     BrowserModule,

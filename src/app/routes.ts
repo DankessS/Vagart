@@ -22,7 +22,6 @@ import {VignettesComponent} from "./components/graphics/papetery/vignettes/vigne
 import {InvitationsComponent} from "./components/graphics/papetery/inivitations/invitations.component";
 import {PosterComponent} from "./components/graphics/papetery/poster/poster.component";
 import {PendantsComponent} from "./components/graphics/papetery/pendants/pendants.component";
-import {AboutComponent} from "./components/about/about.component";
 
 export const routes: Route[] = [
   {path: '', pathMatch: 'full', component: HomeComponent},
@@ -47,7 +46,6 @@ export const routes: Route[] = [
   {path: 'grafika/papeteria/zaproszenia', component: InvitationsComponent},
   {path: 'grafika/papeteria/zawieszki', component: PendantsComponent},
   {path: 'oferta', component: OfferComponent},
-  {path: 'o-nas', component: AboutComponent},
   {path: 'kontakt', component: ContactComponent},
   {path: '**', redirectTo: '', pathMatch: 'full'}
 ];
