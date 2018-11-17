@@ -2,6 +2,7 @@ import {Component, OnInit} from "@angular/core";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {Title} from "@angular/platform-browser";
 import {ComponentNamesService} from "../componentNames.service";
+import {SeoService} from "../../services/seo/seo.service";
 
 @Component({
     selector: 'kontakt',
@@ -12,7 +13,8 @@ export class ContactComponent implements OnInit {
 
     contactForm: FormGroup;
 
-    constructor(private titleService: Title, private names: ComponentNamesService) {
+    constructor(private titleService: Title, private names: ComponentNamesService, seoService: SeoService) {
+      seoService.createLinkForCanonicalURL();
       document.body.style.backgroundImage = "url('../../../assets/img/contact_bckgrd.png')";
       document.body.style.backgroundSize = "cover";
       document.getElementById("cn").classList.add('active');

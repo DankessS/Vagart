@@ -28,7 +28,7 @@ export const routes: Route[] = [
   {path: '', pathMatch: 'full', component: HomeComponent},
   {path: 'video', component: VideoComponent},
   {path: 'architektura', component: ArchitectureComponent},
-  {path: 'architektura/wnętrza', component: InteriorsComponent},
+  {path: 'architektura/wnetrza', component: InteriorsComponent},
   {path: 'grafika', component: GraphicsComponent},
   {path: 'grafika/firma', component: CompanyComponent},
   {path: 'grafika/papeteria', component: PapeteryComponent},
