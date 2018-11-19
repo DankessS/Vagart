@@ -40,9 +40,18 @@ app.set('views', join(DIST_FOLDER, 'browser'));
 
 app.use(compression());
 
+// redirect to non www
+app.get('/*', (req, res, next) => {
+  if (req.headers.host.match(/^www/) !== null ) {
+    res.status(301).redirect('https://' + req.headers.host.replace(/^www\./, '') + req.url);
+  } else {
+    next();
+  }
+});
+
 // TODO: implement data requests securely
-app.get('/api/*', (req, res) => {
-  res.status(404).send('data requests are not supported');
+app.get('*', (req, res) => {
+  res.status(404).send('Brak strony o podanym adresie. Sprawdź poprawność wpisanego adresu.');
 });
 
 // Server static files from /browser
