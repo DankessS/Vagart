@@ -142,7 +142,7 @@ export class MaterialModule {}
     VignettesComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'vagart'}),
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
