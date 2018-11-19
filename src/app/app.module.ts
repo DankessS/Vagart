@@ -70,6 +70,7 @@ import {ToppersComponent} from "./components/graphics/papetery/toppers/toppers.c
 import {VignettesComponent} from "./components/graphics/papetery/vignettes/vignettes.component";
 import {PosterComponent} from "./components/graphics/papetery/poster/poster.component";
 import {PendantsComponent} from "./components/graphics/papetery/pendants/pendants.component";
+import {NotFoundComponent} from "./components/notfound.component";
 
 @NgModule({
   exports: [
@@ -139,7 +140,8 @@ export class MaterialModule {}
     RegistrationTablesComponent,
     SitPlanComponent,
     ToppersComponent,
-    VignettesComponent
+    VignettesComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'vagart'}),

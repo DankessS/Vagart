@@ -43,7 +43,7 @@ app.use(compression());
 // redirect to non www
 app.get('/*', (req, res, next) => {
   if (req.headers.host.match(/^www/) !== null ) {
-    res.status(301).redirect('https://' + req.headers.host.replace(/^www\./, '') + req.url);
+    res.redirect(301, 'https://' + req.headers.host.replace(/^www\./, '') + req.url);
   } else {
     next();
   }
