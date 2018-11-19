@@ -49,11 +49,6 @@ app.get('/*', (req, res, next) => {
   }
 });
 
-// TODO: implement data requests securely
-app.get('*', (req, res) => {
-  res.status(404).send('Brak strony o podanym adresie. Sprawdź poprawność wpisanego adresu.');
-});
-
 // Server static files from /browser
 app.get('*.*', express.static(join(DIST_FOLDER, 'browser')));
 
