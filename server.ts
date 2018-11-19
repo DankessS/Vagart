@@ -15,6 +15,7 @@ enableProdMode();
 
 // Express server
 const app = express();
+var compression = require('compression');
 
 const PORT = process.env.PORT || 4000;
 const DIST_FOLDER = join(process.cwd(), 'dist');
@@ -36,6 +37,8 @@ app.engine('html', ngExpressEngine({
 
 app.set('view engine', 'html');
 app.set('views', join(DIST_FOLDER, 'browser'));
+
+app.use(compression());
 
 // TODO: implement data requests securely
 app.get('/api/*', (req, res) => {
