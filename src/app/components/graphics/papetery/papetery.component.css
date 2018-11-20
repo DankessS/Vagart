@@ -75,6 +75,11 @@
   background-size: cover;
 }
 
+#tab {
+  background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url('../../../../assets/img/grafika/papeteria/tablice_rejestracyjne/tablica1.jpg') center center;
+  background-size: cover;
+}
+
 
 span {
   position: relative;
