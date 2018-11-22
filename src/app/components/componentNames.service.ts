@@ -9,7 +9,7 @@ export class ComponentNamesService {
   about: string = this.title + 'O nas';
   interiors: string = this.architecture + '| Wnętrza';
   contact: string = this.title + 'Kontakt';
-  graphics: string = this.title + 'Grafika ';
+  graphics: string = 'Projekty graficzne,zaproszenia ślubne, dekoracje, loga, winietki oraz wiele innych - VAGart.pl';
   company: string = this.graphics + '| Firma';
   papetery: string = this.graphics + '| Papeteria ';
   tableNumeration: string = this.papetery + '| Numeracja stolików';
