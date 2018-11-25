@@ -10,14 +10,14 @@ import {SeoService} from "../../services/seo/seo.service";
 })
 export class OfferComponent implements OnInit {
 
-  constructor(private titleService: Title, private names: ComponentNamesService, seoService: SeoService) {
-    seoService.createLinkForCanonicalURL();
+  constructor(private titleService: Title, private names: ComponentNamesService, private seoService: SeoService) {
     document.body.style.background = "url('../../../assets/img/OFERTA.png') no-repeat center center fixed";
     document.body.style.backgroundSize = "cover";
     document.getElementById("of").classList.add('active');
   }
 
   ngOnInit(): void {
+    this.seoService.createLinkForCanonicalURL();
     this.titleService.setTitle(this.names.offer);
   }
 

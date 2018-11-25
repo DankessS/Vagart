@@ -11,12 +11,12 @@ import {SeoService} from "../../services/seo/seo.service";
 export class HomeComponent implements OnInit{
 
 
-  constructor(private titleService: Title, private names: ComponentNamesService, seoService: SeoService) {
-    seoService.createLinkForCanonicalURL();
+  constructor(private titleService: Title, private names: ComponentNamesService, private seoService: SeoService) {
     document.getElementById("hm").classList.add('active');
   }
 
   ngOnInit(): void {
+    this.seoService.createLinkForCanonicalURL();
     this.titleService.setTitle(this.names.home);
   }
 

@@ -1,6 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {Meta, Title} from "@angular/platform-browser";
 import {ComponentNamesService} from "../componentNames.service";
+import {SeoService} from "../../services/seo/seo.service";
 
 @Component({
   selector: 'grafika',
@@ -9,7 +10,7 @@ import {ComponentNamesService} from "../componentNames.service";
 })
 export class GraphicsComponent implements OnInit {
 
-  constructor(private titleService: Title, private names: ComponentNamesService, private meta: Meta) {
+  constructor(private titleService: Title, private names: ComponentNamesService, private seoService: SeoService, private meta: Meta) {
     this.meta.updateTag({name: 'description', content: 'Realizujemy wyszukane projekty graficzne, zaproszenia ślubne, dekoracje, loga, winietki, banery, zawieszki, wizytówki, identyfikazję wizualną firmy.'});
     this.meta.updateTag({name: 'keywords', content: 'zaproszenia ślubne, winietki, logo, banery, zawieszki, identyfikacja wizualna firmy, plakaty, wizytówki, dekoracje'});
     this.meta.updateTag({property:'og:title', content:'Projekty graficzne,zaproszenia ślubne, dekoracje, loga, winietki oraz wiele innych - VAGart.pl'});
@@ -24,6 +25,7 @@ export class GraphicsComponent implements OnInit {
 
   ngOnInit(): void {
     this.titleService.setTitle(this.names.graphics);
+    this.seoService.createLinkForCanonicalURL();
   }
 
 }

@@ -13,8 +13,7 @@ export class ContactComponent implements OnInit {
 
     contactForm: FormGroup;
 
-    constructor(private titleService: Title, private names: ComponentNamesService, seoService: SeoService) {
-      seoService.createLinkForCanonicalURL();
+    constructor(private titleService: Title, private names: ComponentNamesService, private seoService: SeoService) {
       document.body.style.backgroundImage = "url('../../../assets/img/contact_bckgrd.png')";
       document.body.style.backgroundSize = "cover";
       document.getElementById("cn").classList.add('active');
@@ -41,6 +40,7 @@ export class ContactComponent implements OnInit {
     }
 
   ngOnInit(): void {
+    this.seoService.createLinkForCanonicalURL();
     this.titleService.setTitle(this.names.contact);
   }
 
