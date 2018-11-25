@@ -18,7 +18,7 @@ export class InvitationsComponent implements OnInit {
     this.meta.updateTag({property:'og:description', content:'Realizujemy zaproszenia ślubne, rustykalne, klasyczne, glamour, spersonalizowane, indywidualne projekty.'});
     this.meta.updateTag({property:'og:image', content:'https://vagart.pl/assets/img/grafika/papeteria/zaproszenia/zaproszenia3.JPG'});
     this.meta.updateTag({property:'og:image:alt', content:'Realizujemy zaproszenia ślubne, rustykalne, klasyczne, glamour, spersonalizowane, indywidualne projekty.'});
-    document.body.style.background = "url('../../../assets/img/GRAFIKA.png') no-repeat center center fixed";
+    document.body.style.background = "url('../../../assets/img/GRAFIKA.webp') no-repeat center center fixed";
     document.body.style.backgroundSize = "cover";
   }
 

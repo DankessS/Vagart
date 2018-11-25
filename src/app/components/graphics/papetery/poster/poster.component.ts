@@ -11,7 +11,7 @@ import {SeoService} from "../../../../services/seo/seo.service";
 export class PosterComponent implements OnInit {
 
   constructor(private titleService: Title, private names: ComponentNamesService, private seoService: SeoService) {
-    document.body.style.background = "url('../../../assets/img/GRAFIKA.png') no-repeat center center fixed";
+    document.body.style.background = "url('../../../assets/img/GRAFIKA.webp') no-repeat center center fixed";
     document.body.style.backgroundSize = "cover";
   }
 
