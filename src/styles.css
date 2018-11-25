@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: url('/assets/img/background.png') no-repeat center center fixed;
+  background: url('/assets/img/background.webp') no-repeat center center fixed;
   -webkit-overflow-scrolling: touch;
   background-size: cover;
   min-height: 100%;

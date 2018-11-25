@@ -14,7 +14,7 @@ export class ContactComponent implements OnInit {
     contactForm: FormGroup;
 
     constructor(private titleService: Title, private names: ComponentNamesService, private seoService: SeoService) {
-      document.body.style.backgroundImage = "url('../../../assets/img/contact_bckgrd.png')";
+      document.body.style.backgroundImage = "url('../../../assets/img/contact_bckgrd.webp')";
       document.body.style.backgroundSize = "cover";
       document.getElementById("cn").classList.add('active');
       this.contactForm = new FormGroup({

@@ -11,7 +11,7 @@ import {SeoService} from "../../services/seo/seo.service";
 export class ArchitectureComponent implements OnInit {
 
   constructor(private titleService: Title, private names: ComponentNamesService, private seoService: SeoService) {
-    document.body.style.background = "url('../../../assets/img/ARCHITEKTURA.png') no-repeat center center fixed";
+    document.body.style.background = "url('../../../assets/img/ARCHITEKTURA.webp') no-repeat center center fixed";
     document.body.style.backgroundSize = "cover";
     document.getElementById("at").classList.add('active');
   }

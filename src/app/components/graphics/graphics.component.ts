@@ -18,7 +18,7 @@ export class GraphicsComponent implements OnInit {
     this.meta.updateTag({property:'og:description', content:'Realizujemy wyszukane projekty graficzne, zaproszenia ślubne, dekoracje, loga, winietki, banery, zawieszki, wizytówki, identyfikazję wizualną firmy.'});
     this.meta.updateTag({property:'og:image', content:'https://vagart.pl/assets/img/grafika/papeteria/zaproszenia/zaproszenia3.JPG'});
     this.meta.updateTag({property:'og:image:alt', content:'Realizujemy wyszukane projekty graficzne, zaproszenia ślubne, dekoracje, loga, winietki, banery, zawieszki, wizytówki, identyfikazję wizualną firmy.'});
-    document.body.style.background = "url('../../../assets/img/GRAFIKA.png') no-repeat center center fixed";
+    document.body.style.background = "url('../../../assets/img/GRAFIKA.webp') no-repeat center center fixed";
     document.body.style.backgroundSize = "cover";
     document.getElementById("gf").classList.add('active');
   }

@@ -12,7 +12,7 @@ export class VideoComponent implements OnInit {
 
   constructor(private titleService: Title, private names: ComponentNamesService, seoService: SeoService) {
     seoService.createLinkForCanonicalURL();
-    document.body.style.background = "url('../../../assets/img/VIDEO.jpg') no-repeat center center fixed";
+    document.body.style.background = "url('../../../assets/img/VIDEO.webp') no-repeat center center fixed";
     document.body.style.backgroundSize = "cover";
     document.getElementById("vd").classList.add('active');
   }
