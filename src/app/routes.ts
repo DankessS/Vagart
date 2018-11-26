@@ -23,6 +23,10 @@ import {InvitationsComponent} from "./components/graphics/papetery/inivitations/
 import {PosterComponent} from "./components/graphics/papetery/poster/poster.component";
 import {PendantsComponent} from "./components/graphics/papetery/pendants/pendants.component";
 import {NotFoundComponent} from "./components/notfound.component";
+import {CardsComponent} from "./components/graphics/company/cards/cards.component";
+import {PostersComponent} from "./components/graphics/company/posters/posters.component";
+import {OtherComponent} from "./components/graphics/company/other/other.component";
+import {LogoComponent} from "./components/graphics/company/logo/logo.component";
 
 export const routes: Route[] = [
   {path: '', pathMatch: 'full', component: HomeComponent},
@@ -31,6 +35,10 @@ export const routes: Route[] = [
   {path: 'architektura/wnetrza', component: InteriorsComponent},
   {path: 'grafika', component: GraphicsComponent},
   {path: 'grafika/firma', component: CompanyComponent},
+  {path: 'grafika/firma/wizytowki', component: CardsComponent},
+  {path: 'grafika/firma/plakaty', component: PostersComponent},
+  {path: 'grafika/firma/inne', component: OtherComponent},
+  {path: 'grafika/firma/logo', component: LogoComponent},
   {path: 'grafika/papeteria', component: PapeteryComponent},
   {path: 'grafika/papeteria/numeracja_stolikow', component: TableNumerationComponent},
   {path: 'grafika/papeteria/menu', component: MenuComponent},

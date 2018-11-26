@@ -14,6 +14,10 @@ export class ComponentNamesService {
   papetery: string = this.graphics + '| Papeteria ';
   tableNumeration: string = this.papetery + '| Numeracja stolików';
   banners: string = this.papetery + '| Banery';
+  cards: string = this.company + '| Wizytówki';
+  posters: string = this.company + '| Plakaty';
+  other: string = this.company + '| Inne';
+  logo: string = this.company + '| Logo';
   cakeTickets: string = this.papetery + '| Bileciki na kołacz';
   decoration: string = this.papetery + '| Dekoracje';
   guestBook: string = this.papetery + '| Księga gości';

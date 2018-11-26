@@ -71,6 +71,10 @@ import {VignettesComponent} from "./components/graphics/papetery/vignettes/vigne
 import {PosterComponent} from "./components/graphics/papetery/poster/poster.component";
 import {PendantsComponent} from "./components/graphics/papetery/pendants/pendants.component";
 import {NotFoundComponent} from "./components/notfound.component";
+import {CardsComponent} from "./components/graphics/company/cards/cards.component";
+import {LogoComponent} from "./components/graphics/company/logo/logo.component";
+import {OtherComponent} from "./components/graphics/company/other/other.component";
+import {PostersComponent} from "./components/graphics/company/posters/posters.component";
 
 @NgModule({
   exports: [
@@ -141,6 +145,10 @@ export class MaterialModule {}
     SitPlanComponent,
     ToppersComponent,
     VignettesComponent,
+    CardsComponent,
+    LogoComponent,
+    OtherComponent,
+    PostersComponent,
     NotFoundComponent
   ],
   imports: [
