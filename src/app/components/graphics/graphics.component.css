@@ -30,6 +30,11 @@
   transform: scale(1.1);
 }
 
+#idn {
+  background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url('../../../assets/img/grafika/firma.webp') center center;
+  background-size: cover;
+}
+
 span {
   position: relative;
   float: left;
