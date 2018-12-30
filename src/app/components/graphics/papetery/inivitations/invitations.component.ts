@@ -16,14 +16,15 @@ export class InvitationsComponent implements OnInit {
     this.meta.updateTag({property:'og:title', content:'Zaproszenia ślubne, klasyczne, rustykalne, glamour, indywidualne projekty, pełna oferta - VAGart.pl'});
     this.meta.updateTag({property:'og:url', content:'https://vagart.pl/grafika/papeteria/zaproszenia'});
     this.meta.updateTag({property:'og:description', content:'Realizujemy zaproszenia ślubne, rustykalne, klasyczne, glamour, spersonalizowane, indywidualne projekty.'});
-    this.meta.updateTag({property:'og:image', content:'https://vagart.pl/assets/img/grafika/papeteria/zaproszenia/zaproszenia3.JPG'});
+    this.meta.updateTag({property:'og:image', content:'https://vagart.pl/assets/img/grafika/papeteria/zaproszenia3.webp'});
     this.meta.updateTag({property:'og:image:alt', content:'Realizujemy zaproszenia ślubne, rustykalne, klasyczne, glamour, spersonalizowane, indywidualne projekty.'});
     document.body.style.background = "url('../../../assets/img/GRAFIKA.webp') no-repeat center center fixed";
     document.body.style.backgroundSize = "cover";
   }
 
   ngOnInit(): void {
-    this.seoService.createLinkForCanonicalURL();
+    // this.seoService.createLinkForCanonicalURL();
+
     this.titleService.setTitle(this.names.invitations);
   }
 
