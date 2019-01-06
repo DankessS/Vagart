@@ -1,7 +1,8 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, Inject, OnInit, PLATFORM_ID} from "@angular/core";
 import {Meta, Title} from "@angular/platform-browser";
 import {ComponentNamesService} from "../../componentNames.service";
 import {SeoService} from "../../../services/seo/seo.service";
+import {isPlatformBrowser} from "@angular/common";
 
 @Component({
   selector: 'firma',
@@ -10,7 +11,7 @@ import {SeoService} from "../../../services/seo/seo.service";
 })
 export class CompanyComponent implements OnInit {
 
-  constructor(private titleService: Title, private names: ComponentNamesService, private seoService: SeoService, private meta: Meta) {
+  constructor(@Inject(PLATFORM_ID) private platformId: any, private titleService: Title, private names: ComponentNamesService, private seoService: SeoService, private meta: Meta) {
     this.meta.updateTag({name: 'description', content: 'Kompleksowa oprawa wizualna dla firmy, loga, winietki, wizytówki, plakaty, reklama dla Twojej marki - VAGart.pl'});
     this.meta.updateTag({name: 'keywords', content: 'firma, oprawa graficzna, logo, wizytówki, plakaty, reklama, działalność, wizualna'});
     this.meta.updateTag({property:'og:title', content:'Oprawa wizualna firmy, loga, wizytówki, plakaty - VAGart.pl'});
@@ -18,11 +19,13 @@ export class CompanyComponent implements OnInit {
     this.meta.updateTag({property:'og:description', content:''});
     this.meta.updateTag({property:'og:image', content:'https://vagart.pl/assets/img/grafika/firma.webp'});
     this.meta.updateTag({property:'og:image:alt', content:'Kompleksowa oprawa wizualna dla firmy, loga, winietki, wizytówki, plakaty, reklama dla Twojej marki - VAGart.pl'});
-    document.body.style.background = "url('../../../assets/img/GRAFIKA.webp') no-repeat center center fixed";
-    document.body.style.backgroundSize = "cover";
   }
 
   ngOnInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      document.body.style.background = "url('../../../assets/img/GRAFIKA.webp') no-repeat center center fixed";
+      document.body.style.backgroundSize = "cover";
+    }
     this.seoService.createLinkForCanonicalURL();
     this.titleService.setTitle(this.names.company);
   }

@@ -1,4 +1,4 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, Inject, OnInit, PLATFORM_ID} from "@angular/core";
 import {Meta, Title} from "@angular/platform-browser";
 import {ComponentNamesService} from "../../componentNames.service";
 import {SeoService} from "../../../services/seo/seo.service";
@@ -10,7 +10,7 @@ import {SeoService} from "../../../services/seo/seo.service";
 })
 export class PapeteryComponent implements OnInit {
 
-  constructor(private titleService: Title, private names: ComponentNamesService, private seoService: SeoService, private meta: Meta) {
+  constructor(@Inject(PLATFORM_ID) private platformId: any,private titleService: Title, private names: ComponentNamesService, private seoService: SeoService, private meta: Meta) {
     this.meta.updateTag({name: 'description', content: 'Realizujemy kompleksową papeterię ślubną, zaproszenia ślubne, zawieszki na alkohol, winietki, banery, bileciki na kołacz, księgi gości i wiele innych.'});
     this.meta.updateTag({name: 'keywords', content: 'zaproszenia ślubne, winietki, banery, zawieszki na alkohol, plakaty, wizytówki, dekoracje'});
     this.meta.updateTag({property:'og:title', content:'Papeteria ślubna, zaproszenia, winietki, zawieszki, ozdoby, dekoracja - VAGart.pl'});

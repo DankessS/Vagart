@@ -1,8 +1,9 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, Inject, OnInit, PLATFORM_ID} from "@angular/core";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {Title} from "@angular/platform-browser";
 import {ComponentNamesService} from "../componentNames.service";
 import {SeoService} from "../../services/seo/seo.service";
+import {isPlatformBrowser} from "@angular/common";
 
 @Component({
     selector: 'kontakt',
@@ -13,10 +14,7 @@ export class ContactComponent implements OnInit {
 
     contactForm: FormGroup;
 
-    constructor(private titleService: Title, private names: ComponentNamesService, private seoService: SeoService) {
-      document.body.style.backgroundImage = "url('../../../assets/img/contact_bckgrd.webp')";
-      document.body.style.backgroundSize = "cover";
-      document.getElementById("cn").classList.add('active');
+    constructor(@Inject(PLATFORM_ID) private platformId: any, private titleService: Title, private names: ComponentNamesService, private seoService: SeoService) {
       this.contactForm = new FormGroup({
         email: new FormControl('', [Validators.required, Validators.email]),
         username: new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(40)]),
@@ -40,6 +38,11 @@ export class ContactComponent implements OnInit {
     }
 
   ngOnInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      document.body.style.backgroundImage = "url('../../../assets/img/contact_bckgrd.webp')";
+      document.body.style.backgroundSize = "cover";
+      document.getElementById("cn").classList.add('active');
+    }
     this.seoService.createLinkForCanonicalURL();
     this.titleService.setTitle(this.names.contact);
   }
