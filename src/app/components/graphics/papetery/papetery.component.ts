@@ -2,6 +2,7 @@ import {Component, Inject, OnInit, PLATFORM_ID} from "@angular/core";
 import {Meta, Title} from "@angular/platform-browser";
 import {ComponentNamesService} from "../../componentNames.service";
 import {SeoService} from "../../../services/seo/seo.service";
+import {isPlatformBrowser} from "@angular/common";
 
 @Component({
   selector: 'papeteria',
@@ -18,11 +19,13 @@ export class PapeteryComponent implements OnInit {
     this.meta.updateTag({property:'og:description', content:'Realizujemy kompleksową papeterię ślubną, zaproszenia ślubne, zawieszki na alkohol, winietki, banery, bileciki na kołacz, księgi gości i wiele innych.'});
     this.meta.updateTag({property:'og:image', content:'https://vagart.pl/assets/img/grafika/papeteria/zaproszenia/zaproszenia3.JPG'});
     this.meta.updateTag({property:'og:image:alt', content:'Realizujemy kompleksową papeterię ślubną, zaproszenia ślubne, zawieszki na alkohol, winietki, banery, bileciki na kołacz, księgi gości i wiele innych.'});
-    document.body.style.background = "url('../../../assets/img/GRAFIKA.webp') no-repeat center center fixed";
-    document.body.style.backgroundSize = "cover";
   }
 
   ngOnInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      document.body.style.background = "url('../../../assets/img/GRAFIKA.webp') no-repeat center center fixed";
+      document.body.style.backgroundSize = "cover";
+    }
     this.seoService.createLinkForCanonicalURL();
     this.titleService.setTitle(this.names.papetery);
   }
