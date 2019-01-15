@@ -5,7 +5,7 @@
   color: white;
   font-size: 1.5em;
   height:320px;
-  margin-top: 60%;
+  margin-top: 90%;
   cursor: pointer;
   -webkit-transition: all 200ms ease-in;
   -webkit-transform: scale(1);
@@ -35,12 +35,22 @@
   background-size: cover;
 }
 
+#pap {
+  background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url('../../../assets/img/grafika/papeteria/zaproszenia3.webp') center center;
+  background-size: cover;
+}
+
 span {
   position: relative;
   float: left;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 770px) {

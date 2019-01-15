@@ -4,7 +4,7 @@
   border: solid white;
   color: white;
   font-size: 1.5em;
-  height:250px;
+  height:320px;
   margin-top: 90%;
   cursor: pointer;
   -webkit-transition: all 200ms ease-in;
@@ -46,6 +46,6 @@ span {
 @media screen and (max-width: 770px) {
   .square {
     margin: 5% 13% 20%;
-    height:250px;
+    height:260px;
   }
 }
