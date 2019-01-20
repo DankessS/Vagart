@@ -37,42 +37,42 @@
 }
 
 .sidenav #yt {
-  background: url('/assets/img/YOUTUBE.png') no-repeat;
+  background: url('/../assets/img/YOUTUBE.png') no-repeat;
   background-size: 17px;
   width: 17px;
   height: 17px;
 }
 
 .sidenav #yt:hover {
-  background: url('/assets/img/YOUTUBE 2.png') no-repeat;
+  background: url('/../assets/img/YOUTUBE 2.png') no-repeat;
   background-size: 17px;
   width: 17px;
   height: 17px;
 }
 
 .sidenav #fb {
-  background: url('/assets/img/FACEBOOK.png') no-repeat;
+  background: url('/../assets/img/FACEBOOK.png') no-repeat;
   background-size: 10px;
   width: 10px;
   height: 17px;
 }
 
 .sidenav #fb:hover {
-  background: url('/assets/img/FACEBOOK 2.png') no-repeat;
+  background: url('/../assets/img/FACEBOOK 2.png') no-repeat;
   background-size: 10px;
   width: 10px;
   height: 17px;
 }
 
 .sidenav #in {
-  background: url('/assets/img/INSTAGRAM.png') no-repeat;
+  background: url('/../assets/img/INSTAGRAM.png') no-repeat;
   background-size: 17px;
   width: 17px;
   height: 17px;
 }
 
 .sidanav #in:hover {
-  background: url('/assets/img/INSTAGRAM 2.png') no-repeat;
+  background: url('/../assets/img/INSTAGRAM 2.png') no-repeat;
   background-size: 17px;
   width: 17px;
   height: 17px;
@@ -129,7 +129,7 @@
   }
 
   .sidenav.responsive #in-rspn {
-    background: url('/assets/img/INSTAGRAM.png') no-repeat;
+    background: url('/../assets/img/INSTAGRAM.png') no-repeat;
     background-size: 17px;
     width: 17px;
     height: 17px;
