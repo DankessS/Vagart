@@ -75,6 +75,12 @@ import {CardsComponent} from "./components/graphics/company/cards/cards.componen
 import {LogoComponent} from "./components/graphics/company/logo/logo.component";
 import {OtherComponent} from "./components/graphics/company/other/other.component";
 import {PostersComponent} from "./components/graphics/company/posters/posters.component";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import {GlubczyceComponent} from "./components/architecture/interiors/glubczyce/glubczyce.component";
+
+library.add(faCoffee);
 
 @NgModule({
   exports: [
@@ -149,6 +155,7 @@ export class MaterialModule {}
     LogoComponent,
     OtherComponent,
     PostersComponent,
+    GlubczyceComponent,
     NotFoundComponent
   ],
   imports: [
@@ -159,7 +166,8 @@ export class MaterialModule {}
     routing,
     MaterialModule,
     RouterModule,
-    Angular2ImageGalleryModule
+    Angular2ImageGalleryModule,
+    FontAwesomeModule
   ],
   providers: [ComponentNamesService],
   bootstrap: [AppComponent],

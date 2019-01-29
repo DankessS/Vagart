@@ -27,12 +27,14 @@ import {CardsComponent} from "./components/graphics/company/cards/cards.componen
 import {PostersComponent} from "./components/graphics/company/posters/posters.component";
 import {OtherComponent} from "./components/graphics/company/other/other.component";
 import {LogoComponent} from "./components/graphics/company/logo/logo.component";
+import {GlubczyceComponent} from "./components/architecture/interiors/glubczyce/glubczyce.component";
 
 export const routes: Route[] = [
   {path: '', pathMatch: 'full', component: HomeComponent},
   {path: 'video', component: VideoComponent},
   {path: 'architektura', component: ArchitectureComponent},
   {path: 'architektura/wnetrza', component: InteriorsComponent},
+  {path: 'architektura/wnetrza/glubczyce', component: GlubczyceComponent},
   {path: 'grafika', component: GraphicsComponent},
   {path: 'grafika/firma', component: CompanyComponent},
   {path: 'grafika/firma/wizytowki', component: CardsComponent},

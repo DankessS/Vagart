@@ -17,6 +17,11 @@
   transform: scale(1);
 }
 
+#idn {
+  background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url('../../../assets/img/architektura/wnetrza.webp') center center;
+  background-size: cover;
+}
+
 .square:hover {
   box-shadow: 0px 0px 150px #000000;
   z-index: 2;
