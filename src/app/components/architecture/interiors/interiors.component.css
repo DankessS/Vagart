@@ -3,7 +3,7 @@
   text-align:center;
   border: solid white;
   color: white;
-  font-size: 30px;
+  font-size: 24px;
   height:250px;
   margin-top: 80%;
   cursor: pointer;
@@ -15,6 +15,11 @@ span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#glb {
+  background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url('../../../../assets/img/architektura/wnetrza.webp') center center;
+  background-size: cover;
 }
 
 @media screen and (max-width: 1000px) {
