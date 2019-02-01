@@ -38,6 +38,16 @@ span {
   transform: translate(-50%, -50%);
 }
 
+#mys {
+  background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url('../../../../assets/img/architektura/wnetrza/myslowice.webp') center center;
+  background-size: cover;
+}
+
+#tych {
+  background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url('../../../../assets/img/architektura/wnetrza/tychy.webp') center center;
+  background-size: cover;
+}
+
 #glb {
   background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url('../../../../assets/img/architektura/wnetrza.webp') center center;
   background-size: cover;
