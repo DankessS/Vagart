@@ -28,6 +28,8 @@ import {PostersComponent} from "./components/graphics/company/posters/posters.co
 import {OtherComponent} from "./components/graphics/company/other/other.component";
 import {LogoComponent} from "./components/graphics/company/logo/logo.component";
 import {GlubczyceComponent} from "./components/architecture/interiors/glubczyce/glubczyce.component";
+import {TychyComponent} from "./components/architecture/interiors/tychy/tychy.component";
+import {MyslowiceComponent} from "./components/architecture/interiors/myslowice/myslowice.component";
 
 export const routes: Route[] = [
   {path: '', pathMatch: 'full', component: HomeComponent},
@@ -35,6 +37,8 @@ export const routes: Route[] = [
   {path: 'architektura', component: ArchitectureComponent},
   {path: 'architektura/wnetrza', component: InteriorsComponent},
   {path: 'architektura/wnetrza/glubczyce', component: GlubczyceComponent},
+  {path: 'architektura/wnetrza/myslowice', component: MyslowiceComponent},
+  {path: 'architektura/wnetrza/tychy', component: TychyComponent},
   {path: 'grafika', component: GraphicsComponent},
   {path: 'grafika/firma', component: CompanyComponent},
   {path: 'grafika/firma/wizytowki', component: CardsComponent},

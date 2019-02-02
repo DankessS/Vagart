@@ -8,7 +8,9 @@ export class ComponentNamesService {
   architecture: string = this.title + 'Architektura ';
   about: string = this.title + 'O nas';
   interiors: string = this.architecture + '| Wnętrza';
-  glubczyce: string = this.interiors + '| Glubczyce';
+  glubczyce: string = this.interiors + '| Glubczyce - łazienka, kuchnia';
+  myslowice: string = this.interiors + '| Mysłowice - mieszkanie 60m2';
+  tychy: string = this.interiors + '| Tychy - mieszkanie 54m2';
   contact: string = this.title + 'Kontakt';
   graphics: string = 'Projekty graficzne,zaproszenia ślubne, dekoracje, loga, winietki oraz wiele innych - VAGart.pl';
   company: string = this.graphics + '| Firma';

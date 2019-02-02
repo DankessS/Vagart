@@ -79,6 +79,8 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import {GlubczyceComponent} from "./components/architecture/interiors/glubczyce/glubczyce.component";
+import {MyslowiceComponent} from "./components/architecture/interiors/myslowice/myslowice.component";
+import {TychyComponent} from "./components/architecture/interiors/tychy/tychy.component";
 
 library.add(faCoffee);
 
@@ -156,6 +158,8 @@ export class MaterialModule {}
     OtherComponent,
     PostersComponent,
     GlubczyceComponent,
+    MyslowiceComponent,
+    TychyComponent,
     NotFoundComponent
   ],
   imports: [
