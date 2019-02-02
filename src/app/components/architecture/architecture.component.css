@@ -17,8 +17,13 @@
   transform: scale(1);
 }
 
-#idn {
+#wne {
   background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url('../../../assets/img/architektura/wnetrza.webp') center center;
+  background-size: cover;
+}
+
+#meb {
+  background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url('../../../assets/img/architektura/meble.webp') center center;
   background-size: cover;
 }
 

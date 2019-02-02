@@ -30,12 +30,14 @@ import {LogoComponent} from "./components/graphics/company/logo/logo.component";
 import {GlubczyceComponent} from "./components/architecture/interiors/glubczyce/glubczyce.component";
 import {TychyComponent} from "./components/architecture/interiors/tychy/tychy.component";
 import {MyslowiceComponent} from "./components/architecture/interiors/myslowice/myslowice.component";
+import {FurnituresComponent} from "./components/architecture/furnitures/furnitures.component";
 
 export const routes: Route[] = [
   {path: '', pathMatch: 'full', component: HomeComponent},
   {path: 'video', component: VideoComponent},
   {path: 'architektura', component: ArchitectureComponent},
   {path: 'architektura/wnetrza', component: InteriorsComponent},
+  {path: 'architektura/meble', component: FurnituresComponent},
   {path: 'architektura/wnetrza/glubczyce', component: GlubczyceComponent},
   {path: 'architektura/wnetrza/myslowice', component: MyslowiceComponent},
   {path: 'architektura/wnetrza/tychy', component: TychyComponent},

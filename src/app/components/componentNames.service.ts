@@ -8,6 +8,7 @@ export class ComponentNamesService {
   architecture: string = this.title + 'Architektura ';
   about: string = this.title + 'O nas';
   interiors: string = this.architecture + '| Wnętrza';
+  furnitures: string = this.architecture + '| Meble';
   glubczyce: string = this.interiors + '| Glubczyce - łazienka, kuchnia';
   myslowice: string = this.interiors + '| Mysłowice - mieszkanie 60m2';
   tychy: string = this.interiors + '| Tychy - mieszkanie 54m2';

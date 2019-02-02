@@ -4,7 +4,10 @@ node /var/www/vagart/code/node_modules/angular2-image-gallery/convert.js /var/ww
 cp -r /var/www/vagart/code/src/assets/img/gallery/glubczyce /var/www/vagart/code/dist/browser/assets/img/gallery/glubczyce
 node /var/www/vagart/code/node_modules/angular2-image-gallery/convert.js /var/www/vagart/code/src/assets/img/architektura/wnetrza/myslowice --outputDir /var/www/vagart/code/src/assets/img/gallery/myslowice --gName=myslowice
 cp -r /var/www/vagart/code/src/assets/img/gallery/myslowice /var/www/vagart/code/dist/browser/assets/img/gallery/myslowice
-node /var/www/vagart/code/node_modules/angular2-image-gallery/convert.js /var/www/vagart/code/src/assets/img/myslowice/wnetrza/tychy --outputDir /var/www/vagart/code/src/assets/img/gallery/tychy --gName=tychy
+node /var/www/vagart/code/node_modules/angular2-image-gallery/convert.js /var/www/vagart/code/src/assets/img/architektura/wnetrza/tychy --outputDir /var/www/vagart/code/src/assets/img/gallery/tychy --gName=tychy
 cp -r /var/www/vagart/code/src/assets/img/gallery/tychy /var/www/vagart/code/dist/browser/assets/img/gallery/tychy
+
+node /var/www/vagart/code/node_modules/angular2-image-gallery/convert.js /var/www/vagart/code/src/assets/img/architektura/meble --outputDir /var/www/vagart/code/src/assets/img/gallery/furnitures --gName=furnitures
+cp -r /var/www/vagart/code/src/assets/img/gallery/furnitures /var/www/vagart/code/dist/browser/assets/img/gallery/furnitures
 
 echo KONIEC
