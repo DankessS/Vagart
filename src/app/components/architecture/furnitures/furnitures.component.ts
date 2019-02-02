@@ -7,7 +7,7 @@ import {isPlatformBrowser} from "@angular/common";
 @Component({
   selector: 'meble',
   templateUrl: './furnitures.component.html',
-  styleUrls: ['../../../../app.component.css', 'furnitures.component.css']
+  styleUrls: ['../../../app.component.css', 'furnitures.component.css']
 })
 export class FurnituresComponent implements OnInit {
 
