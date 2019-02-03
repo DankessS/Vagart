@@ -31,6 +31,7 @@ import {GlubczyceComponent} from "./components/architecture/interiors/glubczyce/
 import {TychyComponent} from "./components/architecture/interiors/tychy/tychy.component";
 import {MyslowiceComponent} from "./components/architecture/interiors/myslowice/myslowice.component";
 import {FurnituresComponent} from "./components/architecture/furnitures/furnitures.component";
+import {UstronComponent} from "./components/architecture/interiors/ustron/ustron.component";
 
 export const routes: Route[] = [
   {path: '', pathMatch: 'full', component: HomeComponent},
@@ -41,6 +42,7 @@ export const routes: Route[] = [
   {path: 'architektura/wnetrza/glubczyce', component: GlubczyceComponent},
   {path: 'architektura/wnetrza/myslowice', component: MyslowiceComponent},
   {path: 'architektura/wnetrza/tychy', component: TychyComponent},
+  {path: 'architektura/wnetrza/ustron', component: UstronComponent},
   {path: 'grafika', component: GraphicsComponent},
   {path: 'grafika/firma', component: CompanyComponent},
   {path: 'grafika/firma/wizytowki', component: CardsComponent},

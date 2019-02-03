@@ -82,6 +82,7 @@ import {GlubczyceComponent} from "./components/architecture/interiors/glubczyce/
 import {MyslowiceComponent} from "./components/architecture/interiors/myslowice/myslowice.component";
 import {TychyComponent} from "./components/architecture/interiors/tychy/tychy.component";
 import {FurnituresComponent} from "./components/architecture/furnitures/furnitures.component";
+import {UstronComponent} from "./components/architecture/interiors/ustron/ustron.component";
 
 library.add(faCoffee);
 
@@ -162,6 +163,7 @@ export class MaterialModule {}
     MyslowiceComponent,
     TychyComponent,
     FurnituresComponent,
+    UstronComponent,
     NotFoundComponent
   ],
   imports: [

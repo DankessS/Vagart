@@ -12,6 +12,7 @@ export class ComponentNamesService {
   glubczyce: string = this.interiors + '| Glubczyce - łazienka, kuchnia';
   myslowice: string = this.interiors + '| Mysłowice - mieszkanie 60m2';
   tychy: string = this.interiors + '| Tychy - mieszkanie 54m2';
+  ustron: string = this.interiors + '| Ustroń - łazienka';
   contact: string = this.title + 'Kontakt';
   graphics: string = 'Projekty graficzne,zaproszenia ślubne, dekoracje, loga, winietki oraz wiele innych - VAGart.pl';
   company: string = this.graphics + '| Firma';

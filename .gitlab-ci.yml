@@ -1,0 +1,9 @@
+stages:
+  - deploy
+
+deploy-app:
+  script:
+    - "./bin/deploy.sh"
+tags: [deploy]
+only:
+  - master

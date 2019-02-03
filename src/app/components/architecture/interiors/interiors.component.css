@@ -53,6 +53,11 @@ span {
   background-size: cover;
 }
 
+/*#ust {*/
+  /*background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url('../../../../assets/img/architektura/ustron.webp') center center;*/
+  /*background-size: cover;*/
+/*}*/
+
 @media screen and (max-width: 1000px) {
   .square {
     margin-top: 5%;
