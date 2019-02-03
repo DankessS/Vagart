@@ -7,7 +7,9 @@ ssh -o StrictHostKeyChecking=no -tt root@"${HOST_IP}" <<EOF_SSH
     git status
 	git stash || true
     git pull
-    ./bin/update.sh
+    ./bin/upload.sh
+    npm run build:prod
+    ./bin/docker-update.sh
     exit
 EOF_SSH
 
